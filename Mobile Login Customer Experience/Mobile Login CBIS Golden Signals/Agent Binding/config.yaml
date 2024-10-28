@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: b2feba09-0a24-4f69-bd02-3d324b1bbdba
+      metricId: 352b5b39-d0dd-499f-b718-89f7a773b125
+      parentEntityId: b90c97f8-267c-4b96-8061-8e90318d4a0d
+      containerName: Biometric Login Availability Dependencies
+      graphName: Agent Binding
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: 6fbf9011-3677-4a5b-bb45-2bf6a7a2b3a1
+      metricId: cf4bdebb-c6e0-45d0-86f1-3edf1be7e1d3
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 8000
+      incident:  
+    - entityId: ee7c1f8d-e7a8-473c-b71a-732f6babcb2e
+      metricId: d1fed02d-0cbd-4b80-8ec4-8650475a7705
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: ee7c1f8d-e7a8-473c-b71a-732f6babcb2e
+      metricId: e5d9fc6b-f669-432d-8a39-49e32357225b
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: ee7c1f8d-e7a8-473c-b71a-732f6babcb2e
+      metricId: f5b773ad-e73c-4af3-aaec-f2f8942ba5c3
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 800
+      incident:  
+    - entityId: ee7c1f8d-e7a8-473c-b71a-732f6babcb2e
+      metricId: 77e7b082-6f16-40ac-a1f4-f82ea350d209
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2000
+    - entityId: ee7c1f8d-e7a8-473c-b71a-732f6babcb2e
+      metricId: 8695a271-9801-4c0d-b9f7-847b54a4bca6
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 200
+      incident:  
+    - entityId: a2cda16a-291a-4068-8f00-b94a68b37cbf
+      metricId: 18edbca1-3fbb-41ea-a508-e8f95eb6360d
+      parentEntityId: 2c0c0ac0-0cdb-44ee-86be-3986dfce344c
+      containerName: AgentBinding Availability Golden Signals
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 40
+      incident: sev2

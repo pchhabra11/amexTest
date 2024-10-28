@@ -1,0 +1,102 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1e679768-6a2d-4ca0-9104-7419e5d5befd
+      metricId: f3ae8104-14ad-4695-8a19-99c30c2cd260
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 220
+    - entityId: fe34d763-8945-46bf-bac4-6314a27a6694
+      metricId: 344bd758-363f-45f5-a9a3-4a96d0f8290e
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Error
+      legendName: BusinessException
+      min: 0
+      max: 70
+    - entityId: 9d0b9f07-ec51-45e5-9811-c0c5029a969c
+      metricId: 29dd9ca9-56fd-483f-9a1b-ce5462ce306b
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: 9d0b9f07-ec51-45e5-9811-c0c5029a969c
+      metricId: 0fff8c2f-d299-486c-a0b9-f9f074f212a2
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: 9d0b9f07-ec51-45e5-9811-c0c5029a969c
+      metricId: 2bd8ace1-e7dc-4433-b100-b30c6d6cea0c
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 5500
+      incident:  
+    - entityId: 9d0b9f07-ec51-45e5-9811-c0c5029a969c
+      metricId: 265f5ec4-908f-4564-93aa-66e905e34d65
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1200
+    - entityId: a03a0331-0bd2-4899-89a8-6b6564b3ba05
+      metricId: 22759cf3-9fce-4388-b754-810e0724d88b
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 9d0b9f07-ec51-45e5-9811-c0c5029a969c
+      metricId: f3b527d7-f100-43b4-a4ad-4da0731573c9
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 5000
+    - entityId: fe34d763-8945-46bf-bac4-6314a27a6694
+      metricId: a0135e1d-ef27-4a4b-89b7-a8357aaede59
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 15
+    - entityId: fe34d763-8945-46bf-bac4-6314a27a6694
+      metricId: 3d48e32b-1149-45e7-aec4-68c2f17fa1fb
+      parentEntityId: a9efa542-7827-4707-a891-2318e4057e19
+      containerName: Verf - Mobile POD
+      graphName: Error
+      legendName: UserException
+      min: 0
+      max: 250

@@ -1,0 +1,83 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 39282e09-a87a-40fe-9d33-f50231d853aa
+      metricId: 6808b9dd-eac6-4ac1-b310-4feaa1e7bcec
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: a009fa29-4d08-4b12-83e5-143bd9c2cfba
+      metricId: 8cf9cce1-402c-4be2-bb22-0965e83ffae6
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 2500
+    - entityId: a009fa29-4d08-4b12-83e5-143bd9c2cfba
+      metricId: 0e52bcda-1377-4652-b0b4-3200e86f3784
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1500
+    - entityId: a009fa29-4d08-4b12-83e5-143bd9c2cfba
+      metricId: ec574f2d-9049-4916-964a-ce01bcfa315a
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2500
+    - entityId: a009fa29-4d08-4b12-83e5-143bd9c2cfba
+      metricId: 572aa3eb-796c-4301-b001-9432e0f7ab7e
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1500
+    - entityId: a009fa29-4d08-4b12-83e5-143bd9c2cfba
+      metricId: 9d685a46-dce5-4645-a743-aa22b6b7968b
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 2500
+    - entityId: fc3b5847-4ee8-4b7a-b5b8-d8b8b87eb292
+      metricId: 7f0e506e-db21-426c-8c31-baf182c2b1c1
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 40
+    - entityId: 3a2a1f22-9581-4505-833f-7a6f4a420078
+      metricId: 142c1708-31be-4781-a3cc-489b63238dc4
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: GCS
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20

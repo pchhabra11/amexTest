@@ -1,0 +1,107 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 04bad7be-31c5-4ee1-aaf1-b4623a8364f2
+      metricId: adef1054-d349-4e91-9377-a10e8f368d79
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: f0413f17-16f7-4281-9e25-33d4583e509b
+      metricId: 9149ab71-079d-4cde-9bc5-b399becdaf7f
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Error
+      legendName: UserException
+      min: 0
+      max: 50
+      incident:  
+    - entityId: 04bad7be-31c5-4ee1-aaf1-b4623a8364f2
+      metricId: 60120f15-8ec1-4372-a5ba-57a4796ab248
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 4500
+      incident:  
+    - entityId: 04bad7be-31c5-4ee1-aaf1-b4623a8364f2
+      metricId: b512dd68-bc19-4da7-9582-f640983a2922
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 4000
+    - entityId: 04bad7be-31c5-4ee1-aaf1-b4623a8364f2
+      metricId: b87bf065-85cf-483d-9871-3c444746e97e
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 2000
+      incident:  
+    - entityId: 761bc9ee-716e-4550-ae4a-e9f0c146d452
+      metricId: 930eb2c9-1e7d-46b0-9801-8e90656dc15f
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 350
+      incident:  
+    - entityId: f0413f17-16f7-4281-9e25-33d4583e509b
+      metricId: 2f7f8fed-fc96-4a9e-ad86-e28c1da5816c
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Error
+      legendName: BusinessException
+      min: 0
+      max: 40
+      incident:  
+    - entityId: f0413f17-16f7-4281-9e25-33d4583e509b
+      metricId: a8dd7058-6f1b-4c87-ac05-325166bee451
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident:  
+    - entityId: 05cb017e-ac34-468f-8876-ee0eadefe5a1
+      metricId: c677d86d-2aed-4912-b3c5-089a193086f0
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Availability
+      legendName: Availability
+      min: 95
+      max: 100
+      incident: sev2
+    - entityId: 04bad7be-31c5-4ee1-aaf1-b4623a8364f2
+      metricId: 0af44063-2427-40a4-8b8d-c79e946ae00b
+      parentEntityId: cf4019bd-b699-4a04-a86f-fb1dcb9c2d3e
+      containerName: Get Challenge API stats - POD
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 4000
+      incident:  

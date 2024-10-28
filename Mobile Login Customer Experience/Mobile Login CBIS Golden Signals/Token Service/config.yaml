@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 5391c4d8-4b3b-411a-98b0-47b10ee7c9b4
+      metricId: 46bbd9b4-3725-4bf3-a537-7fd466335f21
+      parentEntityId: b90c97f8-267c-4b96-8061-8e90318d4a0d
+      containerName: Biometric Login Availability Dependencies
+      graphName: Token Service
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 7f0c758b-6b4e-4737-aa90-064619ec9369
+      metricId: e9252989-f822-48ce-9820-d5c32946390e
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 300
+      incident:  
+    - entityId: 5d4641a5-1c35-4311-81f7-7e2500b8fb13
+      metricId: 691e0c89-7c22-4640-8700-c8576b96a583
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 5d4641a5-1c35-4311-81f7-7e2500b8fb13
+      metricId: 772ad21b-4117-4a25-9f28-8c9acca44841
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 500
+    - entityId: 5d4641a5-1c35-4311-81f7-7e2500b8fb13
+      metricId: 05eb1efe-e870-4a1b-a65b-c4b3918f9a27
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 800
+      incident:  
+    - entityId: 5d4641a5-1c35-4311-81f7-7e2500b8fb13
+      metricId: 71f32e67-02cb-4e7b-96ec-8aae7cda729e
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 50
+      incident:  
+    - entityId: 5d4641a5-1c35-4311-81f7-7e2500b8fb13
+      metricId: 761f9744-829f-40f6-a989-462fe3d8c281
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 600
+      incident:  
+    - entityId: 2ba0d5e9-c16d-4509-b96a-024c17f94629
+      metricId: 4496de20-c4fb-495a-9359-b7e2899f7902
+      parentEntityId: 7be7dce5-b63f-47b0-83cb-806d8af6d1b1
+      containerName: Token Service Availability Golden Signals
+      graphName: Error
+      legendName: Count
+      min: 0
+      max: 20
+      incident: sev2
