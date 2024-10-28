@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 2bfd17d4-9bd3-4677-ad01-63c08e4fa732
+      metricId: eaddc61c-d639-427d-a534-6b922635c3a8
+      parentEntityId: 74e6a339-3537-4fe5-8b9a-0ce884502bc2
+      containerName: CBIS Availability Dependencies
+      graphName: Risk Dispatcher
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: d067b699-3640-489d-a414-49ed1c665e48
+      metricId: 02c36039-8bcb-4bf2-8205-1e97adcc5916
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 25000
+      incident:  
+    - entityId: ae84d2dc-0f6b-4003-a262-3acf81480e24
+      metricId: 1b687336-9682-47cb-9e1e-f22b00442e33
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2500
+    - entityId: ae84d2dc-0f6b-4003-a262-3acf81480e24
+      metricId: 3ec82192-ff8a-4bca-b996-483eda9d0f6e
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 750
+      incident:  
+    - entityId: ae84d2dc-0f6b-4003-a262-3acf81480e24
+      metricId: 7b1e3584-6fb9-4686-8e46-5a270087132e
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: ae84d2dc-0f6b-4003-a262-3acf81480e24
+      metricId: f84dbd30-7e53-4c19-8125-7679a8292a05
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 500
+      incident:  
+    - entityId: ae84d2dc-0f6b-4003-a262-3acf81480e24
+      metricId: fe9911d3-915d-4583-865f-a08ac3eb8fa3
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: a334ca97-770b-4c8d-ab63-f7c99097600a
+      metricId: b4ff7c1d-ddb6-4975-b672-ffc3a1f869d4
+      parentEntityId: 83bb9888-0367-4acd-8db1-a7a4b9d859bb
+      containerName: Web Login Risk Dispatcher Golden Signals
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 150
+      incident: sev2

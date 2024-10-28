@@ -1,0 +1,93 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 8a6aa170-db45-4723-9a77-9433644065cf
+      metricId: 0c72a935-61e0-4d06-8938-00550404c275
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Performance
+      legendName: p99
+      min: 0
+      incident:  
+    - entityId: 8a6aa170-db45-4723-9a77-9433644065cf
+      metricId: a02ab6ed-667b-4a0f-8ab7-dc97a82c323a
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+    - entityId: 8a6aa170-db45-4723-9a77-9433644065cf
+      metricId: a3ad6a27-e6dd-4162-b821-d085414ae1dc
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 8a6aa170-db45-4723-9a77-9433644065cf
+      metricId: c981c00d-fe97-47cb-a1ec-8bb297c4af4f
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Performance
+      legendName: p95
+      min: 0
+      incident:  
+    - entityId: 63e29051-90b9-46c6-940d-f6d43b325b21
+      metricId: f4f5657d-0ef8-445a-88a5-1d00e4956087
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 15
+    - entityId: 62bc7dff-e3f1-466a-9cae-1e487b49c8a7
+      metricId: 5967d2a9-f028-42c8-b1ec-f1c593eba35c
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Availability
+      legendName: Availability
+      min: 97
+      max: 100
+      incident: sev2
+    - entityId: 8a6aa170-db45-4723-9a77-9433644065cf
+      metricId: 0d8751dc-c90d-4722-a54b-d5bec531a358
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      incident:  
+    - entityId: 63e29051-90b9-46c6-940d-f6d43b325b21
+      metricId: e5ce4e12-7259-4696-ae61-42eb65a87878
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 50
+      incident:  
+    - entityId: 27614d1e-8686-4123-aa4f-addeb59e9325
+      metricId: 7afa1b58-d897-4620-b8d5-a6196b114fe1
+      parentEntityId: 73db5020-59d8-4048-a214-29f6c9022526
+      containerName: Raven Communication
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 550
+      incident:  

@@ -1,0 +1,88 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 259533a7-5144-4b67-80c9-3bea52928173
+      metricId: b079a4a3-daee-43c9-b5c6-332f785f936c
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 100
+      incident:  
+    - entityId: 259533a7-5144-4b67-80c9-3bea52928173
+      metricId: d7c19be7-f2db-450c-bb21-b6c0c235080d
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 800
+      incident:  
+    - entityId: 259533a7-5144-4b67-80c9-3bea52928173
+      metricId: b0e75d40-9dde-4c2b-aa31-9baeebb0d5cd
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 900
+    - entityId: 83eb7d21-0147-4320-9d63-95d67e291378
+      metricId: bb8b7fab-da93-4105-99a9-c90834a959b8
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: TPM
+      legendName: TPM
+      min: 200
+      max: 3000
+      incident:  
+    - entityId: 533073b1-cc27-42b7-b328-d9cfda710ad2
+      metricId: 56028c68-9fa8-426a-95f4-ea4d3942ca00
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 50
+    - entityId: c6dc89a7-006f-438b-978d-b534d0860672
+      metricId: 7e9badcb-cd82-4d3e-aa76-7fc8e08fc61e
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 259533a7-5144-4b67-80c9-3bea52928173
+      metricId: 00ab59c9-931d-4ece-94aa-b58754fbc282
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 750
+      incident:  
+    - entityId: 259533a7-5144-4b67-80c9-3bea52928173
+      metricId: f82e1c7b-2b50-4a55-b034-61c5e99240bb
+      parentEntityId: 04df6f32-33b8-4e4a-802a-60d48746bbd4
+      containerName: Tokenizer
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 400
+      incident:  

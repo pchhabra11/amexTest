@@ -1,0 +1,98 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: a87a4505-99bb-4b15-9a70-f49cdea1a3d9
+      metricId: 4096eb46-4307-4654-810e-c618b0a3f878
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 100
+      incident:  
+    - entityId: 8c6a8284-3e1d-42e3-b8e4-32b846553dc1
+      metricId: 0e86114c-b93a-405d-9160-72efe6cc5566
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: TPM
+      legendName: TPM
+      min: 100
+      max: 1500
+      incident:  
+    - entityId: 0de24530-13d0-4050-841e-a31a081137af
+      metricId: 0674e8b1-38f4-4e4d-bd1e-45ee519d0962
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: a87a4505-99bb-4b15-9a70-f49cdea1a3d9
+      metricId: 950ed70e-143d-4621-97f1-6153fad0ac55
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident:  
+    - entityId: 0de24530-13d0-4050-841e-a31a081137af
+      metricId: f3448a6b-c48c-406f-8404-76c604a69367
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: 0de24530-13d0-4050-841e-a31a081137af
+      metricId: ebb7f29a-f093-4666-b494-97217343b963
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 4000
+    - entityId: 0de24530-13d0-4050-841e-a31a081137af
+      metricId: aaab976e-8245-4351-98e4-ab32c71acb1e
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 2000
+      incident:  
+    - entityId: d623ac02-cd6a-4e18-895d-f2e2904f8294
+      metricId: 6d3a994d-5eaf-4190-840f-6723ac46d0fd
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 0de24530-13d0-4050-841e-a31a081137af
+      metricId: 9c059ff9-ae62-4a13-bc1c-69ec9dd5939b
+      parentEntityId: 5895b370-c6bf-46bf-91f7-a3fe584f1d62
+      containerName: OneAuth MFA - Web POA
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 500
+      incident:  

@@ -1,0 +1,96 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1e324848-00b6-4d5a-b0fa-2ac63a2aaa40
+      metricId: 66c402ec-4442-4659-9a30-fe64af239a57
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 300
+    - entityId: f3c91487-a332-4c05-8d28-086315dd957d
+      metricId: 6dbc2c98-67fd-41f3-9140-2ad29d191c1c
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 800
+      incident:  
+    - entityId: 8c730353-8828-4abb-8dd9-3dd52e91e8b4
+      metricId: bca7bab3-12e8-4c2b-bd4c-d346266aee5d
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 8c730353-8828-4abb-8dd9-3dd52e91e8b4
+      metricId: 3c6873eb-80f8-4113-ae22-90ba3cad4764
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 500
+      incident:  
+    - entityId: 8c730353-8828-4abb-8dd9-3dd52e91e8b4
+      metricId: df73a02e-d80e-40c4-96cd-f5597b281536
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 750
+    - entityId: 1e324848-00b6-4d5a-b0fa-2ac63a2aaa40
+      metricId: d45929e1-ffb0-4cfe-a759-ac588ee1ff80
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 15
+    - entityId: 84334287-5507-4d52-8025-7c2816631563
+      metricId: ed5c8537-3a75-44dc-95c9-6cd12185decd
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 8c730353-8828-4abb-8dd9-3dd52e91e8b4
+      metricId: 7e6bd366-10da-499f-8b45-8c4e133a700f
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 120
+      incident:  
+    - entityId: 8c730353-8828-4abb-8dd9-3dd52e91e8b4
+      metricId: f3319617-1d36-4466-ac3b-2aa9b9994e95
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Raven Registration
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 750
+      incident:  
