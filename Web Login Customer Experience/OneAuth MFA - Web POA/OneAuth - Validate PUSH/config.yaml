@@ -1,0 +1,98 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 61b9971f-f2dc-4f9e-bb21-8010bbf28a92
+      metricId: e7bc5242-0e1e-4be6-9f76-d7605cf43517
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: b12b0674-1a76-4ac3-961a-9803a12362e0
+      metricId: 14f3cf32-ae99-47d5-bda3-eec23ddb7aea
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: b12b0674-1a76-4ac3-961a-9803a12362e0
+      metricId: c5992e77-3e3c-4b46-9ec7-975b814e141f
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 800
+      incident:  
+    - entityId: b12b0674-1a76-4ac3-961a-9803a12362e0
+      metricId: e12f88ac-ad1c-4942-9e7c-b6409ae634d6
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 3000
+    - entityId: 82676118-e17d-4f01-b083-be37c8a5819a
+      metricId: d5fd3470-e3b6-4aa3-b9f3-cee054371fe6
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident:  
+    - entityId: b12b0674-1a76-4ac3-961a-9803a12362e0
+      metricId: 9aaeee85-3f18-4eae-b851-9cf54ea78239
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: b12b0674-1a76-4ac3-961a-9803a12362e0
+      metricId: e5cf34c0-26e0-42f4-8b0f-6b10b0cbb730
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: 82676118-e17d-4f01-b083-be37c8a5819a
+      metricId: 1eb4e86a-1821-4f3c-8947-a2e14a18463d
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 40
+      incident:  
+    - entityId: ef4e6157-a2f5-4f99-8938-0ce7df20515b
+      metricId: e3e85692-ae71-49a9-8ca3-8b2a418d7f90
+      parentEntityId: 815f026f-410f-4815-a070-57ec66acd4a7
+      containerName: OneAuth - Validate PUSH
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 300
+      incident:  

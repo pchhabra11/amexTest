@@ -1,0 +1,97 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 90623d85-da98-490a-a7bf-904b4be350cd
+      metricId: c43b023c-3d2c-4ee8-8402-53042aecaa3e
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 300
+    - entityId: 90623d85-da98-490a-a7bf-904b4be350cd
+      metricId: 420993dc-f968-4b9e-85c0-ce7c46bc5e1b
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 25
+      incident:  
+    - entityId: 77457733-5969-4440-b8d1-6b6c24adbc8b
+      metricId: 28dbd010-80bc-419d-b453-8118c7e1cf1f
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 150
+      incident:  
+    - entityId: c014bac1-ae9b-40de-a331-1ffc35f930f1
+      metricId: 1a96dfe8-ab91-41d9-ad73-5ef838123576
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 25
+    - entityId: 9d6647e2-7e4e-4886-ae32-6f0a6bd48bbb
+      metricId: 4e6830d2-a525-4589-91ce-19338f505a9f
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Availability
+      legendName: Availability
+      min: 99.5
+      max: 100
+      incident: sev2
+    - entityId: 90623d85-da98-490a-a7bf-904b4be350cd
+      metricId: b715b0ea-db3b-430c-a848-c0bc699fdaa3
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 300
+      incident:  
+    - entityId: 90623d85-da98-490a-a7bf-904b4be350cd
+      metricId: d62ed074-a398-4f12-beaa-34e953e8362f
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 100
+      incident:  
+    - entityId: 90623d85-da98-490a-a7bf-904b4be350cd
+      metricId: 87e82e72-0f21-45cf-96a6-c5890cf27ca1
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 300
+      incident:  
+    - entityId: c014bac1-ae9b-40de-a331-1ffc35f930f1
+      metricId: 7733e118-ba93-48a1-b7b5-d447faf9d5f9
+      parentEntityId: 4f0650fc-9040-42a2-9d25-92d838fabca5
+      containerName: Push AuthN - Validate PUSH
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 5
+      incident:  

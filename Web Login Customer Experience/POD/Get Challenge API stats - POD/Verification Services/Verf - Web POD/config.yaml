@@ -1,0 +1,107 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 306e8228-8a9a-47dc-abf2-0e88b7f3d9e8
+      metricId: 702d9efa-ca88-414f-bde0-dc16100a8485
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: 306e8228-8a9a-47dc-abf2-0e88b7f3d9e8
+      metricId: bd7d9154-01ea-4e2b-8cc0-0cf9bf6626fd
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 5000
+    - entityId: 6324de39-b293-4f1f-8678-0916e29301a8
+      metricId: 8c99ecb0-5988-4de3-b534-2b80dfb48599
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Error
+      legendName: BusinessException
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 6324de39-b293-4f1f-8678-0916e29301a8
+      metricId: e9172a19-80bc-4b40-97b2-4e838035c09f
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Error
+      legendName: UserException
+      min: 0
+      max: 10
+      incident:  
+    - entityId: 6324de39-b293-4f1f-8678-0916e29301a8
+      metricId: 24e4b9f1-8dc1-4637-ba0f-63506f084cd4
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 150
+      incident:  
+    - entityId: ab0a408a-2e23-4da3-a3a7-63f6fb12d925
+      metricId: 0d177295-0b03-4efd-b10c-58463963f9a2
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Availability
+      legendName: Availability
+      min: 97
+      max: 100
+      incident: sev2
+    - entityId: 306e8228-8a9a-47dc-abf2-0e88b7f3d9e8
+      metricId: d7801658-5630-4de0-9ea5-e47eeedee486
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: 306e8228-8a9a-47dc-abf2-0e88b7f3d9e8
+      metricId: 74dc19af-2c46-4d3d-89f2-36b5a2feb457
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 2500
+      incident:  
+    - entityId: 306e8228-8a9a-47dc-abf2-0e88b7f3d9e8
+      metricId: ba49a238-63a2-4caf-a972-05639cef6391
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: df435c4b-46ef-4ff0-8277-cec0eb410055
+      metricId: a270b2fb-4b8f-41d4-a3c9-275dc28f04e6
+      parentEntityId: 4653db05-e47c-436a-af68-1534b0b40467
+      containerName: Verf - Web POD
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 350
+      incident:  
