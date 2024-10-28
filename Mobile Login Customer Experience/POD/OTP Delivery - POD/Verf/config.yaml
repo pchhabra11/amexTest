@@ -1,0 +1,106 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: a4f018e0-35d3-4670-864b-b18b2f4fc6df
+      metricId: 3227266c-51cb-4bae-aabe-89f7a2fa18c6
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 4000
+    - entityId: a4f018e0-35d3-4670-864b-b18b2f4fc6df
+      metricId: 77b7df26-35a6-4437-b748-5038c32becd1
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: a4f018e0-35d3-4670-864b-b18b2f4fc6df
+      metricId: 9455d2ff-1b5d-4016-ab82-2e54b080f564
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: a4f018e0-35d3-4670-864b-b18b2f4fc6df
+      metricId: 9a7cdf46-b9f5-4044-8a88-99674603307d
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: 30d1c309-0bbb-49e8-b885-6b613b8bf9af
+      metricId: 2441d65c-5462-41f9-8286-8f359933b4f5
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 25
+    - entityId: f7d12205-de6c-4ea0-800f-16218344bcf1
+      metricId: 0f269381-f2bc-46f0-8fc0-ec7147fece70
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Availability
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: a4f018e0-35d3-4670-864b-b18b2f4fc6df
+      metricId: af61b5fb-f2db-4ced-bc71-03d3616f169c
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 2000
+      incident:  
+    - entityId: 33542558-06e1-408b-b27f-9e1c78a26aad
+      metricId: fd64fc54-3b33-4386-add4-687385f488d7
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 350
+      incident:  
+    - entityId: 30d1c309-0bbb-49e8-b885-6b613b8bf9af
+      metricId: c58fa4f5-86a0-4fad-89db-a5921c3aac02
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Error
+      legendName: UserException
+      min: 0
+      max: 20
+      incident:  
+    - entityId: 30d1c309-0bbb-49e8-b885-6b613b8bf9af
+      metricId: 1b41aaea-be2d-4e89-b326-9fbf6ee19f5f
+      parentEntityId: 71c51ee6-e336-4419-bc34-82374656e1a8
+      containerName: Verf
+      graphName: Error
+      legendName: BusinessException
+      min: 0
+      max: 500
+      incident:  

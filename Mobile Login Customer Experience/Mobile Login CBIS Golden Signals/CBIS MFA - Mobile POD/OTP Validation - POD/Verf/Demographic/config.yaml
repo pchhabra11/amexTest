@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: b1674cc3-ae19-41bb-b62c-2532ba833285
+      metricId: 91771aca-76a9-4bfe-b31d-91b1b64eb9f7
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 300
+      incident: sev3
+    - entityId: 91c29f6e-164c-495e-ba51-24df664c543f
+      metricId: ec4d7aa3-7f2b-4c69-8401-b9db2d781073
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 500
+      incident: sev3
+    - entityId: baae43d0-0cb2-42f1-8c0c-b69db31d1ba4
+      metricId: 1e42481a-a88d-4d30-b3ca-7eb42b9b7a41
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident: sev3
+    - entityId: 4718ec54-96aa-49a3-8463-731d03691f52
+      metricId: b70ed9fe-e2af-41d1-a2f9-ae7fc41a212c
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: b1674cc3-ae19-41bb-b62c-2532ba833285
+      metricId: 179dfe70-7186-42dc-81fa-c0abf31d6b1b
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: b1674cc3-ae19-41bb-b62c-2532ba833285
+      metricId: 38fb16bf-bbbd-4e83-96e8-00ed03df3e98
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1500
+      incident: sev3
+    - entityId: b1674cc3-ae19-41bb-b62c-2532ba833285
+      metricId: 59afb1bb-6125-42a0-a431-de7a38f0de09
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 3000
+    - entityId: b1674cc3-ae19-41bb-b62c-2532ba833285
+      metricId: 888be5ff-2d2a-4e93-b004-4e7baaacca17
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Demographic
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 3000
+      incident: sev3

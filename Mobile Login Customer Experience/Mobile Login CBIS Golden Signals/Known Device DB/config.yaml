@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 6e79caa0-765f-47ad-ac59-7902f705da8d
+      metricId: f8010829-fb05-48ab-b823-219c1efa6921
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 6e79caa0-765f-47ad-ac59-7902f705da8d
+      metricId: a7065ce6-9bf3-4b09-a28f-df71a6826311
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 400
+    - entityId: 7c6402f8-1390-415f-8916-8968e85737bd
+      metricId: fd6c2f15-be2f-44b0-a071-849b4586b4b8
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident: sev2
+    - entityId: 1c9e19d7-312b-4ab9-8cc3-3054794c921f
+      metricId: 3ee4df94-82e0-4ff1-b201-75d87fad32a0
+      parentEntityId: f40273c9-cbb7-4e45-9077-cfd7c1cba4df
+      containerName: Credential Login Availability Dependencies
+      graphName: Known Device DB
+      legendName: Availability
+      min: 99.9
+      max: 100
+      incident: sev2
+    - entityId: df3af714-c851-4c38-888c-b05dc04fe9a4
+      metricId: f447ee7e-c97d-4bb5-ae70-03e8f709b2fc
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 9000
+      incident:  
+    - entityId: 6e79caa0-765f-47ad-ac59-7902f705da8d
+      metricId: e8b14df6-8e3d-4eca-b518-dd3541a1baba
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 500
+      incident:  
+    - entityId: 6e79caa0-765f-47ad-ac59-7902f705da8d
+      metricId: 7e90da8d-c978-4be6-a716-608441bc3ce2
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 6e79caa0-765f-47ad-ac59-7902f705da8d
+      metricId: 75b31442-ca79-416f-b101-bc58cd7f7cab
+      parentEntityId: 5beb4a02-64de-4008-895f-161459c05de9
+      containerName: KnownDevice DB Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 400
+      incident:  
