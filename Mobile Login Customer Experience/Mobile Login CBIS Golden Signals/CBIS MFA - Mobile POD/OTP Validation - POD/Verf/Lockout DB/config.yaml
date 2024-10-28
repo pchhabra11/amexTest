@@ -1,0 +1,72 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1794509a-0bf6-40ee-8bd3-04460b24d034
+      metricId: 344ac9c8-22e4-4285-a0b5-70464ff017e7
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 250
+    - entityId: d8a3a798-9ab6-496a-bfa3-ef366beaebca
+      metricId: 537de550-704e-4f1e-a66d-00af2f8c6f14
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Error
+      legendName: Failure
+    - entityId: 11237e42-0d7f-43ba-b8bf-888ade67c369
+      metricId: c8c5c1f0-b788-4b0b-ae58-713a1b7cbbfc
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Availability
+      legendName: Availability
+    - entityId: b36de4c0-067d-448f-98e8-d9858d572324
+      metricId: 0e6fcf34-5c18-455f-aaa8-a92b1f533156
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Performance
+      legendName: p99.99
+      incident:  
+    - entityId: b36de4c0-067d-448f-98e8-d9858d572324
+      metricId: 47743db2-d53c-4cd2-8557-b6fe0f96812b
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Performance
+      legendName: p99.9
+    - entityId: b36de4c0-067d-448f-98e8-d9858d572324
+      metricId: 6d1c5c83-090e-4bbe-b211-fd76481cb383
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Performance
+      legendName: p95
+      incident:  
+    - entityId: b36de4c0-067d-448f-98e8-d9858d572324
+      metricId: d35ff4f2-07d3-41c6-91b4-48fd15fe26b0
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Performance
+      legendName: p99
+      incident:  
+    - entityId: b36de4c0-067d-448f-98e8-d9858d572324
+      metricId: eff1c0dc-d241-4a6e-b564-03f7283e9d73
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Lockout DB
+      graphName: Performance
+      legendName: Average
+      incident:  

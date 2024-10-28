@@ -1,0 +1,171 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: d9abd058-0ae5-4517-9bbd-c846b7fe4a1d
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzSuccess_CardsDB_T
+      min: 0
+      max: 15
+    - entityId: d9ba6d61-3403-470d-8c87-d24a8487eaa5
+      metricId: 08814725-f08e-4d49-a2ad-4c92773178b0
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 15
+    - entityId: d9ba6d61-3403-470d-8c87-d24a8487eaa5
+      metricId: 4baee049-ec46-4696-9846-eba5ed894114
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 065a4cae-55cb-4e38-b3c8-bd72be458bda
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzFailure_CardsDB_P
+      min: 0
+      max: 15
+    - entityId: d9ba6d61-3403-470d-8c87-d24a8487eaa5
+      metricId: 461d7f4a-8a61-4f17-ae98-b9d431edb214
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 250
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 53c24092-6db8-471c-a178-be0bb40aba1a
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzSuccess_CardsDB_P
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: d066d066-8ea3-4db3-91e6-01ee8daa6de1
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzFailure_CardsDB_S
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 8171a9f5-13da-47ce-be2d-46a0dcc47b42
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionSuccess_CardsDB_S
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: f4a73ba7-9eda-4163-8ae7-459ea8a81df4
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionSuccess_CardsDB_P
+      min: 0
+      max: 15
+    - entityId: 1df25b54-11ff-4a40-855f-2728186ab874
+      metricId: d81008ee-1c4a-4a95-8ca2-fa7adcd6adaf
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Availability
+      legendName: Availability
+      min: 94
+      max: 100
+      incident: sev2
+    - entityId: d9ba6d61-3403-470d-8c87-d24a8487eaa5
+      metricId: 85a75779-111c-4472-8c71-912142927cdd
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 250
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 1ef653e6-e7da-46d2-b2fd-c87b2556f080
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzSuccess_CardsDB_S
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 27102f32-93f3-47a7-82e5-648d27db7f98
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionFailure_CardsDB_S
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 38addcdd-2d5e-4eed-ae9b-1c9427f90c46
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionSuccess_CardsDB_T
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 96069ec6-892d-4d3c-b661-82316f919885
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionFailure_CardsDB_P
+      min: 0
+      max: 15
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: f377419c-ffaa-49bf-86d0-bd155d16b0f1
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: ConnectionFailure_CardsDB_T
+      min: 0
+      max: 15
+    - entityId: d9ba6d61-3403-470d-8c87-d24a8487eaa5
+      metricId: f9b97e34-bb08-4492-bed2-891ee6e16f78
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 250
+    - entityId: 942863c7-2452-4235-9444-4a10d457be45
+      metricId: 53fe3df5-064b-4223-84a6-53dccd9b12cf
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 250
+    - entityId: 3760f5e4-b418-4236-8e63-a7c0a081a2c7
+      metricId: 1a18f07b-e9c5-4374-966c-ac086a26cdd3
+      parentEntityId: 962e30f1-b87e-49df-b519-5007b9bd3d0b
+      containerName: Cards DB
+      graphName: Error
+      legendName: AzFailure_CardsDB_T
+      min: 0
+      max: 15

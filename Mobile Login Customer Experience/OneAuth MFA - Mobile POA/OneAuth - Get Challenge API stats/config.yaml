@@ -1,0 +1,97 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 3fe095e4-fe86-48b0-8874-78b5e914006b
+      metricId: 1d9dec45-b580-44cc-9a3f-d8596a375890
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 3fe095e4-fe86-48b0-8874-78b5e914006b
+      metricId: ed96d2ad-76ee-4066-b5a6-071d0234f029
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 94602b7e-f0fa-4c0a-9b7b-ee1fdbf8e485
+      metricId: 08ca97ed-632d-4d77-b044-5a37b7af3545
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 50
+      incident:  
+    - entityId: 1d1e27f6-119d-435f-bc53-31c840951266
+      metricId: e34f9a34-d1bf-40a3-b586-3d20bc0e2306
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 250
+      incident:  
+    - entityId: d68568cf-c40a-471c-8346-771df26f8c1c
+      metricId: ad7a82ae-2eb7-420d-a122-266e7f30b503
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Availability
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: 3fe095e4-fe86-48b0-8874-78b5e914006b
+      metricId: 81ec43da-d5ba-4842-9035-d99138a2fd0b
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: 3fe095e4-fe86-48b0-8874-78b5e914006b
+      metricId: 77a2020e-78a5-4936-bc6a-d4c970853bc5
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 1500
+    - entityId: 3fe095e4-fe86-48b0-8874-78b5e914006b
+      metricId: 1f405111-fa2b-4ce9-94e5-fe5c18c259c3
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 94602b7e-f0fa-4c0a-9b7b-ee1fdbf8e485
+      metricId: f1490da3-4326-45ca-935b-d471901ab322
+      parentEntityId: b06942b0-922a-4e3c-861f-860676679fc3
+      containerName: OneAuth - Get Challenge API stats
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 10

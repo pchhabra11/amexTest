@@ -1,0 +1,72 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1c846397-83be-45aa-ae91-090a77f3bba3
+      metricId: e4e04d9b-7f00-489c-82cb-92fa19026be5
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Performance
+      legendName: p95
+    - entityId: 1c846397-83be-45aa-ae91-090a77f3bba3
+      metricId: 3ead44ab-cd33-4367-a5a2-83ff6a9b57f3
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Performance
+      legendName: p99.99
+    - entityId: 1c846397-83be-45aa-ae91-090a77f3bba3
+      metricId: 69a4cdb6-264d-4dd5-be55-3e0ea614bf64
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Performance
+      legendName: p99
+    - entityId: 23b8e1e1-7fdb-4f0d-a39b-ba72556879e6
+      metricId: 35133968-ebb0-4e15-a82b-9a6edda66da7
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 150
+    - entityId: 9649d276-d056-4023-b907-04487330cd43
+      metricId: 17c90d07-c2d3-4e46-bcba-57b6eed0bf34
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Error
+      legendName: Failure
+      incident:  
+    - entityId: 2a9ea721-86fe-4b15-bd79-374680d80187
+      metricId: c4b45b4a-de25-43b9-ab34-fdc855368d0f
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Availability
+      legendName: Availability
+      incident:  
+    - entityId: 1c846397-83be-45aa-ae91-090a77f3bba3
+      metricId: 7ab085ad-d5e0-4596-bdff-0cfa7d0e6ebf
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 2000
+    - entityId: 1c846397-83be-45aa-ae91-090a77f3bba3
+      metricId: a2e00427-1b31-41ce-9022-7b345fa03dc5
+      parentEntityId: 793b8427-7e00-4843-9a83-f80d781f0c14
+      containerName: Verf - SMS Dispatcher
+      graphName: Performance
+      legendName: p99.9

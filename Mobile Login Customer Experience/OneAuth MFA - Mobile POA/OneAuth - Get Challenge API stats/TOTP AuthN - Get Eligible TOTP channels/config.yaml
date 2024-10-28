@@ -1,0 +1,98 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 5d3be508-e88c-4e42-b6d3-0209abf4308e
+      metricId: 7efd8053-7989-46f9-889a-07e80c70888d
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 300
+      incident:  
+    - entityId: 00d4e206-9b77-40b9-b318-713ff5171e03
+      metricId: 2e960f8c-b18a-4255-917b-174f970371af
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident:  
+    - entityId: 5d3be508-e88c-4e42-b6d3-0209abf4308e
+      metricId: fb909831-3012-4f4c-8bc6-b1fcc5b55b93
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 700
+    - entityId: 5d3be508-e88c-4e42-b6d3-0209abf4308e
+      metricId: 37c62cba-86c8-4ad2-9061-86e7fd200b8e
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1200
+      incident:  
+    - entityId: 5d3be508-e88c-4e42-b6d3-0209abf4308e
+      metricId: ccc93587-51b3-4307-9a85-6efef491e7ff
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1200
+      incident:  
+    - entityId: 88ebdd58-0af1-47c7-bca9-362cc99723dc
+      metricId: 72056db7-4889-483e-ac08-ad446103cdfd
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 350
+      incident:  
+    - entityId: 26776c57-4c5e-4ee1-9dd2-674f9ed4f0b4
+      metricId: d117f967-2cb1-48a1-9829-08e9fe6daabe
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Availability
+      legendName: Availability
+      min: 96
+      max: 100
+      incident: sev2
+    - entityId: 5d3be508-e88c-4e42-b6d3-0209abf4308e
+      metricId: 0bbc547d-50d8-4c08-9daa-79fcff5dbea7
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 1200
+      incident:  
+    - entityId: 00d4e206-9b77-40b9-b318-713ff5171e03
+      metricId: 680af933-cf3d-44a6-a913-18fb00937b52
+      parentEntityId: d4e8df06-6d72-4675-8f34-2aad62b04f23
+      containerName: TOTP AuthN - Get Eligible TOTP channels
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 10
+      incident:  

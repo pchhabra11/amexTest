@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 8ec32588-3899-43a1-9fbf-8dde1cb40268
+      metricId: f0a8b6f8-eaf5-4f75-845e-e9e367f7bfcf
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 400
+      incident:  
+    - entityId: 8ec32588-3899-43a1-9fbf-8dde1cb40268
+      metricId: 69478bec-26d7-4ca0-b2ef-80d2c86e2ea6
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 8ec32588-3899-43a1-9fbf-8dde1cb40268
+      metricId: 5b107dcb-5659-4954-ad16-24cd988726f2
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 1500
+    - entityId: 6b437f0e-82be-4aa6-89c9-d941529db758
+      metricId: b79aa66c-9917-48e4-9f6b-9ab7f63d1ce9
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident: sev2
+    - entityId: 49e4d91d-0ff5-42b9-a30f-ad2f1a960df4
+      metricId: 11b313b9-7491-4174-b147-9b4000128681
+      parentEntityId: b90c97f8-267c-4b96-8061-8e90318d4a0d
+      containerName: Biometric Login Availability Dependencies
+      graphName: Risk Dispatcher
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: ef7581f9-a1b5-4e6f-a1ed-6f9af110a445
+      metricId: 02c36039-8bcb-4bf2-8205-1e97adcc5916
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 16000
+      incident:  
+    - entityId: 8ec32588-3899-43a1-9fbf-8dde1cb40268
+      metricId: 5d112bbc-15d9-48b7-bcc7-5c64a9958594
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: 8ec32588-3899-43a1-9fbf-8dde1cb40268
+      metricId: d8e09d45-3541-4c7b-a44a-ba32206eee97
+      parentEntityId: c8dc8856-e99b-4582-b09c-0fd16a248f1b
+      containerName: Risk Dispatcher Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 850
+      incident:  

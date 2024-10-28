@@ -1,0 +1,126 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1fd963ec-b18e-4c11-b181-90eb58a587fd
+      metricId: 6b3bd5eb-a290-4dfd-9ce5-8aa60a02ebb3
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Biometric - TPM
+      legendName: Biometric Logins
+      min: 0
+      max: 7000
+      incident:  
+    - entityId: 0148ee67-181f-47c0-95bc-f6fe100a95a7
+      metricId: 1bc4fc14-6d89-4f82-9319-3136e926c9c2
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Credential Performance
+      legendName: p99.Response
+      min: 0
+      max: 2000
+      incident:  
+    - entityId: 0148ee67-181f-47c0-95bc-f6fe100a95a7
+      metricId: cbea4fda-49d8-4031-8830-e857c84f370f
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Credential Performance
+      legendName: p999.Response
+      min: 0
+      max: 2500
+      incident:  
+    - entityId: 0148ee67-181f-47c0-95bc-f6fe100a95a7
+      metricId: d9f5755f-7615-4ef7-81da-71e69f4b13a5
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Credential Performance
+      legendName: p99999.Response
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: 1975003c-f7b1-429c-ac6f-a461d0b5d458
+      metricId: dbd9a133-db9f-40fe-b5bf-9fcdd5dc946e
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Credential - TPM
+      legendName: Creds Logins
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: 45d57ee3-c658-4b41-8c5b-490da825c59b
+      metricId: 67fca9b0-4835-42ba-a142-2cd6bb0c1d6b
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Mobile Login CBIS Golden Signals
+      legendName: CBIS
+      min: 99.9
+      max: 100
+      incident: sev2
+    - entityId: 579ee603-c4a9-45f4-ae1d-8006e3a40e69
+      metricId: f425e1b4-13cb-494f-9461-be95c8f16a78
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Biometric Performance
+      legendName: p9999.Response
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: 60f5d02a-e6fd-42bd-8e9a-b8705b3baa6d
+      metricId: 1edecb9e-be53-4315-a603-31fa5f597a28
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Mobile Login CBIS Golden Signals
+      legendName: CBIS
+      min: 99.9
+      max: 100
+      incident: sev2
+    - entityId: 0148ee67-181f-47c0-95bc-f6fe100a95a7
+      metricId: 173102f5-f4a4-49f1-bcf8-1bcbea056dae
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Credential Performance
+      legendName: p9999.Response
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: 579ee603-c4a9-45f4-ae1d-8006e3a40e69
+      metricId: 0d8d4469-ef25-4341-a912-2f1ce0f981c0
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Biometric Performance
+      legendName: p999.Response
+      min: 0
+      max: 4000
+      incident:  
+    - entityId: 579ee603-c4a9-45f4-ae1d-8006e3a40e69
+      metricId: 659cb8e4-fa30-4e44-892a-d11d3dc2ab33
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Biometric Performance
+      legendName: p99999.Response
+      min: 0
+      max: 5000
+      incident:  
+    - entityId: 579ee603-c4a9-45f4-ae1d-8006e3a40e69
+      metricId: e5a5b1f8-b175-484b-9938-a0582cdd37f8
+      parentEntityId: 3c925bb5-9e6e-4414-8c7e-cb8e172519ad
+      containerName: Mobile Login CBIS Golden Signals
+      graphName: Biometric Performance
+      legendName: p99.Response
+      min: 0
+      max: 2000
+      incident:  
