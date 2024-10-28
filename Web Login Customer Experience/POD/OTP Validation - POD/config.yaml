@@ -1,0 +1,106 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 4efdce37-3e31-4c9c-a8e1-3c21b73f35ed
+      metricId: 61272199-3115-4566-a4a3-9d1df792ce79
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+      incident:  
+    - entityId: 4efdce37-3e31-4c9c-a8e1-3c21b73f35ed
+      metricId: ede12030-d5c7-4923-b759-7a72d59d563b
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Error
+      legendName: UserException
+      min: 0
+      max: 50
+      incident:  
+    - entityId: bc65e181-9b07-499f-86be-2db96efd0b17
+      metricId: 8adb108c-c967-4bc9-87a2-62e97b182384
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: bc65e181-9b07-499f-86be-2db96efd0b17
+      metricId: fbecf085-4176-475d-86e0-140bd5dad8fd
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 3500
+    - entityId: bc65e181-9b07-499f-86be-2db96efd0b17
+      metricId: 8a95903a-7b8c-444c-9732-65ef89e9e902
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 2500
+      incident:  
+    - entityId: bc65e181-9b07-499f-86be-2db96efd0b17
+      metricId: c5bd7d37-b801-4640-9536-8af4a4ed690b
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 3500
+      incident:  
+    - entityId: 7a3a992c-b744-45a5-8af7-81a9e7ffb43a
+      metricId: 36be7831-d8db-45ee-b286-05db517d5e11
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 250
+      incident:  
+    - entityId: 4efdce37-3e31-4c9c-a8e1-3c21b73f35ed
+      metricId: b684acf6-6617-49bb-a4cc-4fdc6e8638a0
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Error
+      legendName: BusinessException
+      min: 0
+      incident:  
+    - entityId: d1b62986-9311-4a9a-9b59-e8876a58c0e1
+      metricId: 02678d07-c57a-4974-8349-322e4540d6e6
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Availability
+      legendName: Availability
+      min: 95
+      max: 100
+      incident: sev2
+    - entityId: bc65e181-9b07-499f-86be-2db96efd0b17
+      metricId: 10e4b1bf-a9cd-4c8b-aeb9-4e73733b8e34
+      parentEntityId: 25cfb111-8f2d-463c-9af6-a1a759181a87
+      containerName: OTP Validation - POD
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 3000
+      incident:  

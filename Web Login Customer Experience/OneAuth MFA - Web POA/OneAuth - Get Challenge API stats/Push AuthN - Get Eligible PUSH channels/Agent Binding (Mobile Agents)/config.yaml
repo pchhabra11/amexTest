@@ -1,0 +1,96 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 62789a8c-9ce5-4c48-a547-e3fa2fd2f8c2
+      metricId: 52ae26c4-6061-469f-9048-c867876f7bc2
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: b7345177-9db2-49ac-9641-81bf07ac40e7
+      metricId: 6bc9eef4-5ebc-41bd-8e63-d66bd4b99697
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+    - entityId: 667e941a-15b7-4798-bdd1-924edcf16311
+      metricId: d31300b3-02bd-4d5d-82e3-6a44093dd491
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 62789a8c-9ce5-4c48-a547-e3fa2fd2f8c2
+      metricId: 592c8648-6741-4811-937e-247664819234
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 400
+      incident:  
+    - entityId: 62789a8c-9ce5-4c48-a547-e3fa2fd2f8c2
+      metricId: 9e301740-9b54-42fe-a9df-09ef149a05e5
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 750
+      incident:  
+    - entityId: 62789a8c-9ce5-4c48-a547-e3fa2fd2f8c2
+      metricId: 33c8a5ba-b2d9-42c7-af17-84e643e90be1
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 2500
+      incident:  
+    - entityId: 86a352b3-baf5-4f8c-aa22-9fc94931c47f
+      metricId: 84f9e574-5149-499c-9ec5-aa05f5efbdd6
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Availability
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 62789a8c-9ce5-4c48-a547-e3fa2fd2f8c2
+      metricId: f1038587-db54-43d2-a6c3-3ff0a88d83d9
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2000
+    - entityId: b7345177-9db2-49ac-9641-81bf07ac40e7
+      metricId: 34f4a38a-6b00-42ce-b742-09530c8bb3c2
+      parentEntityId: 5f3ed704-0170-4dbf-afa0-b07d6dbfdddf
+      containerName: Agent Binding (Mobile Agents)
+      graphName: Error
+      legendName: Exception
+      min: 0
+      incident:  

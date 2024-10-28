@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 1399f408-7e13-442c-b87c-92aa04671db7
+      metricId: 93800ea9-6ab5-44e6-91b2-61aaa6e2f6e0
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: 1399f408-7e13-442c-b87c-92aa04671db7
+      metricId: 95e500c7-8e46-4e5c-b1ca-5e5ca9934e27
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2500
+    - entityId: 1399f408-7e13-442c-b87c-92aa04671db7
+      metricId: b20d8af6-1b0f-46d3-839d-63d202c75aff
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 1000
+      incident:  
+    - entityId: 1399f408-7e13-442c-b87c-92aa04671db7
+      metricId: ba603741-ebcd-486c-bb61-75168e0fcadb
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 500
+      incident:  
+    - entityId: 1399f408-7e13-442c-b87c-92aa04671db7
+      metricId: bc0fc28d-8aae-456c-86f6-4d1baadf419e
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: b6320a64-e30f-42b9-9332-5daf8842a394
+      metricId: ccf82ec2-33bf-4d0c-8d65-721c3b043513
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: Error
+      legendName: Count
+      min: 0
+      max: 50
+      incident: sev2
+    - entityId: 4aa80079-b8b7-45e5-bffe-0b50c5eb71cb
+      metricId: c742e61f-96aa-4920-af1f-dfdaff227e1c
+      parentEntityId: 74e6a339-3537-4fe5-8b9a-0ce884502bc2
+      containerName: CBIS Availability Dependencies
+      graphName: Member Read Locale
+      legendName: Availability
+      min: 98
+      max: 100
+      incident: sev2
+    - entityId: 4b6964e7-8a1f-44bd-93f4-a5ffbce69e20
+      metricId: cf5eb3ff-266d-4f22-a3a6-b100d89ea8c6
+      parentEntityId: 8dd5fff4-ff41-4703-aadf-61dcbc87c91d
+      containerName: MemberReadLocale Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 8000
+      incident:  

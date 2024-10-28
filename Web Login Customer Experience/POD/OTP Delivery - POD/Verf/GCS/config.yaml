@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 6a12ee05-7a9a-495a-9695-b0ecdee8ad76
+      metricId: c71c4ca6-9d44-4862-a643-6363723f1be5
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 1500
+      incident:  
+    - entityId: 6a12ee05-7a9a-495a-9695-b0ecdee8ad76
+      metricId: 057dd0c8-d7ce-41b4-83be-c76a63382e29
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 2500
+      incident:  
+    - entityId: 6a12ee05-7a9a-495a-9695-b0ecdee8ad76
+      metricId: 1a65dabd-b3dd-4f20-bb41-a094d741ef52
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 3000
+      incident:  
+    - entityId: 6a12ee05-7a9a-495a-9695-b0ecdee8ad76
+      metricId: 50a19b17-a08b-4923-9331-62164f83f9d9
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 3500
+      incident:  
+    - entityId: 253d6157-da79-4b21-b9fe-9fca84c12b1e
+      metricId: d21805d6-0f59-482c-bd1f-0b07710a5f11
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 150
+      incident:  
+    - entityId: 959ec700-54f5-409e-b954-0d538d3cd5f3
+      metricId: 5ca1c1c5-1021-4a35-a4dd-57298049f78b
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 15
+      incident:  
+    - entityId: e48d2506-fc28-4f29-8441-fc49a1d4e9a9
+      metricId: aef8727e-5f49-422b-9753-d48eea166498
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Availability
+      legendName: Availability
+      min: 97
+      max: 100
+      incident: sev2
+    - entityId: 6a12ee05-7a9a-495a-9695-b0ecdee8ad76
+      metricId: 48911911-5b38-4d82-95d9-b1c5569b7c78
+      parentEntityId: ec8c654d-0565-41b9-9319-35f15f417e00
+      containerName: GCS
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2500

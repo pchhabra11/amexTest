@@ -1,0 +1,97 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 8a8c98da-e962-4f94-8cce-0350c1999983
+      metricId: 12832a05-165c-4e8f-a446-14ab78d72079
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 600
+      incident:  
+    - entityId: f4f0b5f6-fac0-4bb6-b59e-db47aabcef11
+      metricId: 7141cfc5-03e9-4a7f-a880-e53417a25f4c
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Availability
+      legendName: Availability
+      min: 97
+      max: 100
+      incident: sev2
+    - entityId: 8a8c98da-e962-4f94-8cce-0350c1999983
+      metricId: d6e65870-c8c0-485d-a8c0-61eaf8ae6b87
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 1700
+      incident:  
+    - entityId: 8a8c98da-e962-4f94-8cce-0350c1999983
+      metricId: 89475c20-9e3c-44f9-8f3d-fd3e8ec2d334
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 800
+      incident:  
+    - entityId: 8a8c98da-e962-4f94-8cce-0350c1999983
+      metricId: 381a9565-b948-4e6f-80f0-5af9be3d7520
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 220
+      incident:  
+    - entityId: 8a8c98da-e962-4f94-8cce-0350c1999983
+      metricId: 742b8ad0-8dfe-4943-a254-35e25cb7ba70
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 2000
+    - entityId: a83cb3b7-4730-495b-ab21-8d37366f88f3
+      metricId: 6a335eee-c52a-499f-a885-48237f693a38
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 50
+    - entityId: a83cb3b7-4730-495b-ab21-8d37366f88f3
+      metricId: 5aca1b28-264e-4305-86fe-43bb7b82b995
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 70
+      incident:  
+    - entityId: 4e8fb90a-6b27-485e-b5e2-f12da9e301a5
+      metricId: 3baeb503-7f9b-4808-9ed7-e68abf718b0d
+      parentEntityId: 20f54bf6-f6de-440a-860e-3a8689606faf
+      containerName: OTP AuthN - OTP Delivery
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 1000
+      incident:  

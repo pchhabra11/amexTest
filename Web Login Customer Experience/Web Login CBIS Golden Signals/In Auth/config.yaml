@@ -1,0 +1,89 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 694f86c3-d03f-40db-9ccf-e1e65ce7d614
+      metricId: 0d220b61-de4a-490e-bb2c-e62582394dec
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 850
+      incident:  
+    - entityId: 694f86c3-d03f-40db-9ccf-e1e65ce7d614
+      metricId: ae56c5e9-00db-4fd2-b9c4-a4555657a6e6
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 700
+    - entityId: 694f86c3-d03f-40db-9ccf-e1e65ce7d614
+      metricId: ae60fa6c-3932-4ece-a840-ca5158763d55
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 100
+      incident:  
+    - entityId: 694f86c3-d03f-40db-9ccf-e1e65ce7d614
+      metricId: d0210a97-d28a-4b58-876f-01fa955978b1
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 850
+      incident:  
+    - entityId: 694f86c3-d03f-40db-9ccf-e1e65ce7d614
+      metricId: deba2d8b-76cf-4e7e-aaa4-e5bc3cbf0b3d
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 700
+      incident:  
+    - entityId: ce9cca5f-f606-40ad-9b9c-468d411810e0
+      metricId: 2e9d2167-6d21-4bed-8d7c-f3e7c0e519ad
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: Error
+      legendName: Count
+      min: 0
+      max: 20
+      incident: sev2
+    - entityId: a01a2416-edf4-4e59-96ef-a28d8b28ad38
+      metricId: 35430df6-e25a-47b3-95d5-9b76752a7d8d
+      parentEntityId: 74e6a339-3537-4fe5-8b9a-0ce884502bc2
+      containerName: CBIS Availability Dependencies
+      graphName: In Auth
+      legendName: Availability
+      min: 95
+      max: 100
+      incident: sev2
+    - entityId: 02630a9d-948f-40db-a14c-25d2075a835f
+      metricId: 1119c89b-4238-4676-b98d-7396e5846012
+      parentEntityId: c98084c9-9440-44bd-8c0f-d1a0f87d46e4
+      containerName: InAuth Availability Golden Signals
+      graphName: TPM
+      legendName: Count
+      min: 0
+      max: 8000
+      incident:  

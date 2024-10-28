@@ -1,0 +1,91 @@
+source:
+  defaultConfig:
+    emailConfigName: ""
+    slackConfigName: ""
+    incidentSevTwoConfigName: SolveInsights-OneIdentity-Sev2
+    incidentSevThreeConfigName: SolveInsights-OneIdentity-Sev3
+    incidentSevFourConfigName: SolveInsights-OneIdentity-Sev4
+    incident:
+      severity: Sev4
+      enabled: false
+  entity:
+    name: Enterprise Login
+    id: b9dad97a-63d7-4cc2-91a5-cadba667cfa8
+    ignore:
+      entityIds: []
+    whitelist:
+      entityIds: []
+    metricThresholds:
+    - entityId: 2abe28cb-0321-495f-ac20-19cd302f08e1
+      metricId: 1416b419-0358-4176-b9e6-fb2cc16f3b10
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Availability
+      legendName: Availability
+      min: 99
+      max: 100
+      incident: sev2
+    - entityId: bca952d9-2e8c-474f-97c3-2408386c9b21
+      metricId: c4ae6922-0269-4768-bc42-aebb7b35a9f5
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Performance
+      legendName: p95
+      min: 0
+      max: 20
+    - entityId: bca952d9-2e8c-474f-97c3-2408386c9b21
+      metricId: 492f68e9-e221-4323-bc1f-65ec4f8fcbb0
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Performance
+      legendName: p99.99
+      min: 0
+      max: 40
+    - entityId: bca952d9-2e8c-474f-97c3-2408386c9b21
+      metricId: 7a0955c8-d60d-4784-83c8-35fe1888169d
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Performance
+      legendName: p99
+      min: 0
+      max: 30
+    - entityId: bca952d9-2e8c-474f-97c3-2408386c9b21
+      metricId: a07ece8b-124e-47be-997f-a8d7bcfcda1b
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Performance
+      legendName: p99.9
+      min: 0
+      max: 40
+    - entityId: bca952d9-2e8c-474f-97c3-2408386c9b21
+      metricId: 9877ef67-a730-4f49-aa4e-7dc70796b5fe
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Performance
+      legendName: Average
+      min: 0
+      max: 30
+    - entityId: b66e83c5-f10d-40ab-9bad-7aa924be7b08
+      metricId: bfafdf44-b923-452d-9b62-dbf1af053821
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Error
+      legendName: Exception
+      min: 0
+      max: 40
+    - entityId: b66e83c5-f10d-40ab-9bad-7aa924be7b08
+      metricId: 9c876135-9cbe-41eb-a74e-7e7bdb5fd2ae
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: Error
+      legendName: Failure
+      min: 0
+      max: 20
+    - entityId: 49be78a7-0865-48e9-bbb1-003c8d049df2
+      metricId: f2ac793e-91bb-41fc-a860-ccc2b44205e9
+      parentEntityId: 26d4f8ca-a840-4a13-904e-d7b17b04064c
+      containerName: Redis
+      graphName: TPM
+      legendName: TPM
+      min: 0
+      max: 1200
